@@ -5,7 +5,7 @@ let buttonEl = document.querySelector('.submitInput');
 let sectionEl = document.querySelector('.sectionEl');
 let tbodyEl = document.querySelector('#table_body');
 buttonEl.addEventListener("click", function () {
-  let requestUrl = 'https://www.loc.gov/search/?q=' + inputElSearch.value + '&fo=json';
+    let requestUrl = 'https://www.loc.gov/' + inputElFormat.value + '/?q='+ inputElSearch.value + '&fo=json';
 
   fetch(requestUrl)
     .then(function (response) {
