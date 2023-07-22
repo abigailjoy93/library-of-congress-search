@@ -9,7 +9,7 @@ buttonEl.addEventListener("click", function () {
 
   fetch(requestUrl)
     .then(function (response) {
-      // console.log(response.json());
+    //  console.log(response.json());
       return response.json();
     })
     .then(function (data) {
