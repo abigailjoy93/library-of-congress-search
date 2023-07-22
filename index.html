@@ -15,7 +15,7 @@
         <h1></h1>
     </header>
     <main class="flex-row justify-center align-center col-auto p-4 bg-light">
-        <section class="card card-rounded col-7 bg-white">
+        <section class="card card-rounded col-7 bg-white sectionEl">
             <header class="card-header text-center">
                 <h2 class="text-white">
                     Library of Congress API Search
@@ -30,16 +30,43 @@
             <div>
                 <p>Search</p>
                 <input class="searchInput"></input>
-                <p>Format</p>
-                <input class="formatInput"></input>
+                <select class="form-control my-1 formatInput" id="format">
+                    <option>all</option>
+                    <option>maps</option>
+                    <option>audio</option>
+                    <option>photos</option>
+                    <option>newspapers</option>
+                    <option>film-and-videos</option>
+                    <option>notated-music</option>
+                    <option>websites</option>
+                </select>
+            </div>
+            <div class="submitInput">submit</div>
+            <div class="col-md-9">
+                <table class="table table-striped" id="project_table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Subject</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_body">
+                    
 
+
+                    </tbody>
+                </table>
             </div>
 
 
-            <div class="submitInput">Submit</div>
+
+
+
             <footer class="card-footer text-center">
 
-               
+
 
             </footer>
         </section>
